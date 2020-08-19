@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2c3e50;
+  color: #fff;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+input[type="search"] {
+  width: 100%;
+  background: #ecf0f1;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  outline: none;
+  margin: 10px 0;
+}
+.App {
+  width: 500px;
+  margin: 30px auto;
+}
+.userCard {
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 20px 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.userCard .image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 48px;
+  width: 48px;
+}
+.userCard .info {
+  margin: 0;
+  padding: 3px 30px;
+}
+.userCard .name {
+  font-weight: 600;
+}
+.userCard .cell,
+.userCard .email {
+  font-size: 0.9em;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
 }
